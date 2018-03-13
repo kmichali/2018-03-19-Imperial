@@ -10,10 +10,10 @@ humandate: "March 19-20, 2018"    # human-readable dates for the workshop (e.g.,
 humantime: "10:00 - 17:00"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2018-03-19      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2018-03-20        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Navjot Kukreja, Stefano Galvan, Anat Melamed, Raquel Prado Garcia, Antonio Berlanga"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["TBA"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+instructors: ["Navjot Kukreja, Stefano Galvan, Anat Melamed, Antonio Berlanga"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helpers: ["Sabrina Rodrigues, Santiago Lacalle, Jazz Mack Smith, Katerina Michalickova"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["k.michalickova@imperial.ac.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
+collaborative_notes:  "http://pad.software-carpentry.org/2018-03-19-Imperial" # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -225,11 +225,12 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   where 'YYYY-MM-DD-site' is the identifier for your workshop,
   e.g., '2015-06-10-esu'.
 {% endcomment %}
-{% if page.collaborative_notes %}
+
+<h2 id="setup">Class online document</h2>
+
 <p id="collaborative_notes">
-  We will use this <a href="{{page.collaborative_notes}}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
+  <b>We will use this <a href=" http://pad.software-carpentry.org/2018-03-19-Imperial">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.</b>
 </p>
-{% endif %}
 
 <hr/>
 
